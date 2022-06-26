@@ -92,6 +92,7 @@ class PromptLearner(nn.Module):
 
         self.ctx = nn.Parameter(ctx_vectors)
 
+        # TODO: 最核心的部分，MetaNet由2层线性+relu+线性组成
         self.meta_net = nn.Sequential(OrderedDict([
             ("linear1", nn.Linear(vis_dim, vis_dim // 16)),
             ("relu", nn.ReLU(inplace=True)),

@@ -3,7 +3,8 @@
 cd ../..
 
 # custom config
-DATA=/path/to/datasets
+# DATA=/path/to/datasets
+DATA=/hdd/lhxiao/coop/data
 TRAINER=CoCoOp
 
 DATASET=$1
